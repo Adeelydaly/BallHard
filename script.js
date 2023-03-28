@@ -4,8 +4,9 @@ $(document).ready(function() {
 
     // $(".bkg-img").fadeIn(3000);
 
-    $('.bkg-gif').fadeOut(2000).promise().done(function(){
-        $('.bkg-img').fadeIn(2000);
-    });
+    // $('.bkg-gif').fadeOut(2000).promise().done(function(){
+    //     $('.bkg-img').fadeIn(2000);
+    // });
     
 })
+

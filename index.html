@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
+    <script src="script.js"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+    <title>DWade</title>
+</head>
+<body>
+
+    <div class="home-container">
+        <div class="header border-gradient border-gradient-purple only-bottom">
+            <div class="hamburger-menu">
+                <input id="menu__toggle" type="checkbox" />
+                <label class="menu__btn" for="menu__toggle">
+                  <span></span>
+                </label>
+            
+                <ul class="menu__box">
+                  <li><a href="./index.html" class="menu__item" href="#">Home</a></li>
+                  <li><a href="./gaurd_moves.html" class="menu__item" href="#">Gaurd</a></li>
+                  <li><a class="menu__item" href="./sig_moves.html">Center</a></li>
+                </ul>
+              </div>
+            <div class="middle">
+                <span>BALL</span>
+                <span>HARD</span>
+            </div>
+        </div>
+
+        <h1 class="index-heading">STRIVE FOR SUCCESS</h1>
+
+        <div class="p-text">
+          <p style="margin-bottom: 20px;" class="moveText">This is a basketball skill resource website that can be incredibly beneficial to new players in several ways. First and foremost, this website provides new players with access to a wealth of information on how to improve their skills. This can include instructional tutorials on everything from basic techniques to more advanced moves like Euro steps and jump shots. By providing clear, step-by-step instructions on how to perform these moves, this basketball skill resource website can help new players improve their game quickly and effectively.</p>
+
+          <p style="margin-bottom: 20px;"  class="moveText">We have divided our information into two categories, Guards and Centers which are the main position found on a team. This is for players who would like to focus on one of the two positions that bests suit their playing style.</p>
+        </div>
+
+        <div style="margin-bottom: 10vh;" class="index-btns">
+          <a class="border-gradient border-gradient-purple" href="./gaurd_moves.html">GUARDS</a> 
+          <a  class="border-gradient border-gradient-purple" href="./center_moves.html">CENTERS</a>
+        </div>
+        <div class="p-text">
+          <p class="moveText">Here are some inspirational quotes from well-known basketball legends to help you get into the right mindset as you pursue your basketball goals and life in general.</p>
+        </div>
+        
+        <div style="margin-top: 5vh; margin-bottom: 15vh; " class="slideshow-container">
+
+            <div class="mySlides fade">
+              <img src="images/Quotes.png" style="width:100%">
+            </div>
+            
+            <div class="mySlides fade">
+              <img src="images/Quotes-2.png" style="width:100%">
+            </div>
+            
+            <div class="mySlides fade">
+              <img src="images/Quotes-3.png" style="width:100%">
+            </div>
+
+            <div class="mySlides fade">
+                <img src="images/Quotes-4.png" style="width:100%">
+            </div>
+
+            <div class="mySlides fade">
+                <img src="images/Quotes-5.png" style="width:100%">
+            </div>
+            
+        </div>
+            <br>
+            
+            <!-- <div style="text-align:center">
+              <span class="dot"></span> 
+              <span class="dot"></span> 
+              <span class="dot"></span> 
+            </div> -->
+    </div>
+    <script>
+        let slideIndex = 0;
+        showSlides();
+        
+        function showSlides() {
+          let i;
+          let slides = document.getElementsByClassName("mySlides");
+          let dots = document.getElementsByClassName("dot");
+          for (i = 0; i < slides.length; i++) {
+            slides[i].style.display = "none";  
+          }
+          slideIndex++;
+          if (slideIndex > slides.length) {slideIndex = 1}    
+        //   for (i = 0; i < dots.length; i++) {
+        //     dots[i].className = dots[i].className.replace(" active", "");
+        //   }
+          slides[slideIndex-1].style.display = "block";  
+        //   dots[slideIndex-1].className += " active";
+          setTimeout(showSlides, 6000); // Change image every 2 seconds
+        }
+        </script>
+        
+</body>
+</html>
